@@ -693,13 +693,37 @@ footer  {
 
 .contacts  {
 	
+	width: 390px;
+	height: 180px;
+	margin:55px 0px 50px 30px ; 
+	display:inline-block;
+	float: left;
+	text-align: center;
+	margin-left: 110px;
+}
+
+
+.contacts2  {
+	
 	width: 290px;
 	height: 180px;
-	margin:55px 0px 30px 30px ; 
+	margin:55px 0px 50px 30px ; 
 	display:inline-block;
 	float: left;
 	text-align: center;
 }
+
+
+.contacts3  {
+	
+	width: 290px;
+	height: 180px;
+	margin:55px 0px 50px 30px ; 
+	display:inline-block;
+	float: left;
+	text-align: center;
+}
+
 
 
 #pochta,
@@ -735,3 +759,6 @@ footer  {
 	font-family: 'Montserrat', sans-serif;
 	color:#8f8f8f
 }
+
+
+
