@@ -330,6 +330,12 @@ h3 {
 }
 
 
+
+
+#strelka  {
+	display: none;
+}
+
 /*********************************************/
 
 
@@ -395,7 +401,15 @@ h3 {
 		margin-left: 20px;
 
 	}
+
+	.container3  {
+		display: flex;
+		overflow-x: auto;
+	}
 	
+	.container3::-webkit-scrollbar {
+ 		 display: none;
+	}
 
 	#green  {
 	width: 350px;
@@ -454,16 +468,30 @@ h3 {
 		font-size: 23px;
 		text-align: center;
 		color: white;
-		padding-top: 10px;
+		padding-top: 45px;
 
 	}
 
+	
+	.work  {
+		min-width: 250px;
+		height: 100px;
+		margin-top: 45px;
+	}
 
 
+	.main3  {
+		height: 320px;
+	}
 
-
-
-
+	#strelka {
+		display: block;
+		color:white;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		margin-top: 10px;
+	}
 
 
 
