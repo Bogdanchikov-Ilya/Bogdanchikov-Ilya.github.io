@@ -363,12 +363,17 @@ h3 {
 	height: 300px;
 	width: 300px;
 	background-color:  #dddddd;
-	margin: 5px;
+	margin: 10px;
+	transition: 0.3s;
 }
 
 
 
-
+.send-content:hover  {
+	transform:scale(1.09);
+	transition: 0.3s;
+	margin: 19px;
+}
 
 
 
@@ -386,6 +391,7 @@ h3 {
   min-height: 200px;
   display: flex;
   overflow-x:auto;
+  overflow-y: hidden;
 }
 
 .send::-webkit-scrollbar {
