@@ -293,7 +293,7 @@ h3 {
 }
 
 .container3  {
-	
+	text-align: center;
 }
 
 
@@ -396,6 +396,13 @@ h3 {
 }
 
 .send::-webkit-scrollbar-thumb {
+	background-color: #8e8e8e;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+
+.send::-webkit-scrollbar-thumb:hover {
 	background-color: #10c9c3;
 	border-radius: 2px;
 	cursor: pointer;
@@ -408,16 +415,18 @@ h3 {
 	background-color: #f5f5f5;
 	width: 100%;
 	height: 100px;
+	text-decoration: none;
 }
 
 
 #load  {
-	color:#8e8e8e;
+	color:black;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 20px;
 	padding-top: 35px;
+	color: black;
 
 }
 
@@ -429,10 +438,131 @@ h3 {
 
 #more:hover  {
 	text-decoration: none;
-	border:1px solid #8e8e8e;
 }
 
 
+#load  {
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+
+#load:hover  {
+	text-decoration: none;
+	font-size: 25px;
+	transition: 0.4s;
+
+
+}
+
+/*ВИДЕЕЕЕЕЕЕЕОООООООООООООООООООООООО*/
+.main7  {
+	background-color: #fff;
+	width: 100%;
+	height: 850px;
+	position: relative
+}
+
+.content_text  {
+	text-align: center;
+}
+
+h4  {
+	text-align: center;
+	color: black;
+	font-size: 30px;
+	font-family: 'Sen', sans-serif;
+	margin-top: 100px;
+
+}
+
+
+#mobi  {
+	display: none;
+}
+
+
+#content_text  {
+	font-size: 17px;
+	color:black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.video  {
+	background: url(img/itpedia.jpg) center;
+	height: 570px;
+	
+	text-align: center;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    min-width: 400px;
+    max-width: 1100px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.video:hover  {
+	min-width: 460px;
+	max-width: 1160px;
+	height: 620px;
+	transition: 0.4s;
+}
+
+.krug  {
+	background-color: #10c9c3;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    transition: 0.3s
+}
+
+.krug:hover  {
+	width: 120px;
+	height: 120px;
+	transition: 0.3s
+}
+
+
+#arrow  {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    width: 20px;
+}
+
+
+#pere  {
+	/*display: none;*/
+}
 
 
 /*********************************************/
@@ -626,12 +756,42 @@ h3 {
 
 
 
+	.send::-webkit-scrollbar-thumb {
+		background-color: #10c9c3;
+		border-radius: 2px;
+		cursor: pointer;
+	}
 
 
 
+	#mobi  {
+		display: block;
+	}
+
+	
+	#pci {
+		display: none;
+	}
 
 
+	#pere  {
+		display: block;
+	}
 
+
+	#content_text  {
+		font-size: 23px;
+	}
+
+
+	#arrow  {
+		width: 25px;
+	}
+
+
+	.video  {
+		margin-top: 160px;
+	}
 
 
 
