@@ -37,8 +37,14 @@ hr  {
 	position: absolute;
 	top:14%;
 	left:2%;
+	transition: 0.25s;
 }
 
+
+.logo:hover  {
+	transform: scale(1.2);
+	transition: 0.25s;
+}
 
 .menu  {
 	float: right;
@@ -394,8 +400,9 @@ h3 {
 }
 
 .send::-webkit-scrollbar {
-  height: 6px;
+  height: 7px;
   background: #f5f5f5;
+  cursor: pointer;
 
 }
 
@@ -448,6 +455,7 @@ h3 {
 #load  {
 	text-decoration: none;
 	transition: 0.4s;
+
 }
 
 
@@ -463,7 +471,7 @@ h3 {
 .main7  {
 	background-color: #fff;
 	width: 100%;
-	height: 850px;
+	height: 900px;
 	position: relative
 }
 
@@ -564,10 +572,101 @@ h4  {
 }
 
 
-#pere  {
-	/*display: none;*/
+/**************ФОООООООООООООРРРРРММММААААА***/
+.main8  {
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 760px;
+	float: left;
 }
 
+
+
+#form-h  {
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Sen', sans-serif;
+	margin-top: 100px;
+}
+
+
+#form-p  {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: black;
+}
+
+
+#mobi  {
+	display: none;
+}
+
+
+.form  {
+	height: 330px;
+	max-width: 670px;
+	min-width: 300px;
+	text-align: center;
+	margin:0 auto;
+}
+
+
+#name  {
+	height: 45px;
+	width: 300px;
+	float: left;
+	border: none;
+}
+
+
+#name::placeholder  {
+	padding-left:10px;
+	font-size: 15px;
+}
+
+#mail {
+	height: 45px;
+	width: 300px;
+	float: right;
+	border: none;
+}
+
+
+#mail::placeholder  {
+	padding-left:10px;
+	font-size: 15px;
+}
+
+#title  {
+	width: 670px;
+	height: 45px;
+	border: none;
+	margin-top: 35px;
+}
+
+
+#title::placeholder  {
+	padding-left:10px;
+	font-size: 15px;
+}
+
+
+textarea  {
+	margin-top: 35px;
+	width: 670px;
+	height: 170px;
+	border: none;
+}
+
+
+textarea::placeholder  {
+	padding-left: 10px;
+	font-size:15px;
+	font-family: 'Sen', sans-serif;
+	margin-top: 10px;
+}
 
 /*********************************************/
 
@@ -797,10 +896,80 @@ h4  {
 		margin-top: 160px;
 	}
 
+	
+	#form-p  {
+		font-size: 23px;
+	}
+
+	#mobi  {
+		display: block;
+	}
+
+
+	.form  {
+		min-width: 310px;
+		max-width: 450px;
+		height: 450px;
+	}
+
+	
+	#name  {
+		min-width: 310px;
+		
+		width: 100%;
+	}
+
+	#mail  {
+		margin-top: 35px;
+		min-width: 310px;
+		width: 100%;
+		float: left;
+	}
+
+	#title  {
+		min-width: 310px;
+		width: 100%;
+		float: left;
+	}
+
+	textarea  {
+		min-width: 310px;
+		width: 100%;
+		height: 150px;
+		float: left;
+	}
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -818,11 +987,64 @@ h4  {
 		margin:0 auto;
 		margin-top: 100px;
 	}
+
+
 }
 
 
 
+@media (max-width:1214px)  {
 
+	.container2  {
+		margin:0 auto;
+		margin-top: 100px;
+	}
+
+	.main3  {
+		height: 320px;
+	}
+	
+
+	.container3  {
+		display: flex;
+		overflow-x: auto;
+	}
+	
+	.container3::-webkit-scrollbar {
+ 		 height: 3px;
+	}
+
+	.container3::-webkit-scrollbar-thumb{
+		background-color: #d8d8d8;
+	}
+
+
+	#adptive_two  {
+		display: block;
+		font-family: 'Roboto Mono', monospace;
+		font-size: 23px;
+		text-align: center;
+		color: white;
+		padding-top: 45px;
+
+	}
+
+
+	.work  {
+		min-width: 250px;
+		height: 100px;
+		margin-top: 45px;
+	}
+
+	#strelka {
+		display: block;
+		color:white;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
 
 
 
