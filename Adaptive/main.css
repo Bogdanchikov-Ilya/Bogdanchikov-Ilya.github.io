@@ -578,6 +578,7 @@ h4  {
 	width: 100%;
 	height: 760px;
 	float: left;
+	text-align: center;
 }
 
 
@@ -667,6 +668,13 @@ textarea::placeholder  {
 	font-family: 'Sen', sans-serif;
 	margin-top: 10px;
 }
+
+
+#cet  {
+
+}
+
+
 
 /*********************************************/
 
@@ -904,7 +912,11 @@ textarea::placeholder  {
 	#mobi  {
 		display: block;
 	}
+	
 
+	.main8  {
+		height: 870px;
+	}
 
 	.form  {
 		min-width: 310px;
@@ -915,7 +927,7 @@ textarea::placeholder  {
 	
 	#name  {
 		min-width: 310px;
-		
+		border: 1px solid #8e8e8e;  
 		width: 100%;
 	}
 
@@ -924,12 +936,14 @@ textarea::placeholder  {
 		min-width: 310px;
 		width: 100%;
 		float: left;
+		border: 1px solid #8e8e8e; 
 	}
 
 	#title  {
 		min-width: 310px;
 		width: 100%;
 		float: left;
+		border: 1px solid #8e8e8e; 
 	}
 
 	textarea  {
@@ -937,7 +951,16 @@ textarea::placeholder  {
 		width: 100%;
 		height: 150px;
 		float: left;
+		border: 1px solid #8e8e8e; 
 	}
+	
+
+	#cet  {
+		margin-top: 0px;
+		height: 80px;
+		width: 200px;
+	}
+
 
 
 
