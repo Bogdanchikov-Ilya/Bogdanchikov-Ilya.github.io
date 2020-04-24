@@ -1,12 +1,18 @@
 function f1() {
-	a = document.getElementById('name').value;
-	result = document.getElementById('mail').innerHTML;
-	document.getElementById('name').value;
+	var a = document.getElementById('textarea');
 
-	result.innerHTML;
+	var b = document.getElementById('name');
 
+	var c = document.getElementById('title');
 
-	document.getElementById('mail').innerHTML = a;
+	var e = document.getElementById('mail');
 
-	alert(a);
+	const text = "Жалко мда мда";
+	const tele = "постиронично";
+ 	
+	c.value=
+	b.value+ ", ты как с таким именем живёшь вобще а";
+	a.innerHTML = text;
+	e.innerHTML = tele;
+
 }
