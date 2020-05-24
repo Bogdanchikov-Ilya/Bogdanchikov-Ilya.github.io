@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 *  {
    margin: 0;
@@ -8,8 +10,12 @@
 
 header {
    background-color: black;
+   min-width: 1020px;
 }
 
+body {
+
+}
 nav {
    background-color: black;
    text-align: center;
@@ -37,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-  font-size: 18px;
+  color: white;
   transition: 0.2s; 
 }
 
@@ -47,7 +53,7 @@ nav a:hover {
 }
 
 .logo {
-	padding: 20px 190px 0px 30px;
+	padding: 20px 150px 0px 30px;
    cursor: pointer;
 }
 
@@ -58,13 +64,13 @@ nav a:hover {
 .header__content {
    background-color: #9a9a9a;
    height: 650px;
-   width: 100%;
+   min-width: 1020px;
 }
 
 .header__container {
-   min-width: 500px;
+   min-width: 400px;
    height: 450px;
-   margin: 90px 120px;
+   margin: 90px 0px 0px 120px;
    float: left;
 }
 
@@ -76,13 +82,15 @@ nav a:hover {
    float: left;
    color: #fff;
    font-size: 25px;
-   margin-top: 20px;
+   margin-top: 25px;
 }
 
 .container__text_two {
    color:white;
    margin-top: 150px;
    font-size: 14px;
+   font-family: Arial;
+   font-family: 'Nanum Gothic', sans-serif;
 }
 
 .header__container_button {
@@ -92,12 +100,91 @@ nav a:hover {
    background-color: #9a9a9a;
    color: white;
    margin-top: 50px;
+   cursor: pointer;
+}
+
+.header__content-rigth {
+   float: right;
+   margin: 90px 120px 0px 0px;
+   height: 360px;
+   width: 360px;
+}
+
+.container-right__title {
+   font-family: 'Comfortaa', cursive;
+   font-size: 20px;
+   text-align: center;
+   background-color: #f5f5f5;
+   height: 55px;
+   border-radius: 7px 7px 0px 0px;
+}
+
+#container__title {
+   padding-top: 16px;
+
+}
+
+#orange {
+   color:#ff9b51;
+}
+
+.br__mobile {
+   display: none;
+}
+
+form {
+   height: 250px;
+   background-color: #fff;
+}
+
+.form__name {
+   width: 285px;
+   height: 30px;
+   margin-top: 35px;
+   margin-left: 30px;
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #ccc;
+}
+
+.form__password {
+   width: 285px;
+   height: 30px;
+   margin-top: 35px;
+   margin-left: 30px;
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #ccc;
+
+
+}
+
+.form__mail {
+   width: 285px;
+   height: 30px;
+   margin-top: 35px;
+   margin-left: 30px;
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #ccc;
+
+}
+
+.container-right__button {
+   height: 55px;
+   background-color: #ff9b51;
+   width: 100%;
+   text-decoration: none;
+   border: none;
+   cursor: pointer;
+   color:white;
+   border-radius: 0px 0px 7px 7px;
 }
 
 @media screen and (max-width:736px) {
 
-    html, body  {
-      width: 100%;
+    body  {
+      min-width: 374px;
     }
 
    .menu-trigger {
@@ -140,6 +227,10 @@ nav a:hover {
    nav a:hover {
       background-color:black;
    }
+   
+   header {
+      min-width: 100%;
+   }
 
    .menu-trigger {
       display:none;
@@ -151,16 +242,18 @@ nav a:hover {
    }
 
    .header__content {
-      width: 100%;
+      min-width: 100%;
+      height: 900px;
    }
 
    .header__container {
       text-align: center;
       min-width: 300px;
-      padding: 0;
+      padding: 10px;
       margin:0;
       float: left;
       margin-top: 40px;
+      margin-bottom: 0px;
    }
    
    .container__text {
@@ -170,6 +263,34 @@ nav a:hover {
    br {
       display: none;
    }
+
+   .br__mobile {
+      display: block;
+   }
+
+   .header__content-rigth {
+      text-align: center;
+      margin:0 auto;
+      padding: 7px;
+      min-width: 320px;
+
+   }
+.container-right__title {}
+.container-right__form {}
+   .form__name {
+      margin:0 auto;
+      margin-top: 35px;
+   }
+   .form__password {
+      margin:0 auto;
+      margin-top: 35px;
+   }
+   .form__mail {
+      margin:0 auto;
+      margin-top: 35px;
+   }
+.container-right__button {}
+
 
 
 
