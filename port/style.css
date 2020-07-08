@@ -305,6 +305,12 @@ form {
    margin-top:100px;
    margin-left: 125px;
    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+   transition: all 0.2s ease-out;
+}
+
+#photo:hover {
+   transform: scale(1.05);
+   transition: all 0.2s ease-out;
 }
 
 .sub__text-right {
@@ -335,6 +341,7 @@ form {
    width: 480px;
    height: 85px;
    margin-top: 45px;
+   position: relative;
 }
 
 #up {
@@ -359,6 +366,66 @@ form {
 #optimize {
    display: none;
 }
+
+.pricing {
+   height: 600px;
+   width: 100%;
+   background-color: white; /*#f5f5f5*/
+   float: left;
+}
+
+.pricing__title {
+   margin: 0 auto;
+   text-align: center;
+   font-size: 30px;
+   margin-top: 100px;
+   position: relative;
+   display: border-left: ;
+}
+
+.pricing__line {
+   width: 65px;
+   height: 2px;
+   background-color: #4a81c0;
+   margin:0 auto;
+   margin-top: 30px;
+}
+
+.pricing__decription {
+   text-align: center;
+   margin-top: 30px;
+}
+
+.pricing__blocks {
+   display: flex;
+   margin-top: 50px;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.pricing__block-himself {
+   width: 360px;
+   height: 220px;
+   margin-top: 20px;
+}
+
+.block__img {
+   text-align: center;
+}
+
+.pricing__block-title {
+   text-align: center;
+   margin-top: 30px;
+   font-weight:bold
+}
+
+.pricing__block-description {
+   text-align: center;
+   font-size: 14px;
+   margin-top: 30px;
+   color: #86878b;
+}
+
 
 @media screen and (max-width:736px) {
 
@@ -590,11 +657,18 @@ form {
 
 #photo {
    float: left;
-   width: 80%; /* Ширина */
+   width: 80%; 
    height: 80%;
    box-shadow: 0 0 20px rgba(0,0,0,0.6);
    margin: 3.5% 3.5%  0.5% 9.9%;
 }
+
+   #photo:hover {
+      transform: scale(1.07);
+      transition: all 0.2s ease-out;
+   }
+
+
 
 .sub__text-right {
    padding: 0;
