@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <canvas id="canvas" width="650" height="700"></canvas>
+    <span>Резульат:</span>
+    <span id="score"></span>
+    <br>
+<div class="players">
+    <button onclick="p1(0)"><img src="img/player0.png" alt=""></button>
+    <button onclick="p1(1)" id="p1"><img src="img/player1.png" alt=""></button>
+    <button onclick="p1(2)"><img src="img/player2.png" alt=""></button>
+    <button onclick="p1(3)"><img src="img/player3.png" alt=""></button>
+    <button onclick="p1(4)"><img src="img/player4.png" alt=""></button>
+    <button onclick="p1(5)"><img src="img/player5.png" alt=""></button>
+</div> 
+
+<hr>
+
+<div class="foods">
+    <button onclick="p2(0)"><img src="img/eat0.png" alt=""></button>
+    <button onclick="p2(1)" id="p2"><img src="img/eat1.png" alt=""></button>
+    <button onclick="p2(2)"><img src="img/eat2.png" alt=""></button>
+    <button onclick="p2(3)"><img src="img/eat3.png" alt=""></button>
+    <button onclick="p2(4)"><img src="img/eat4.png" alt=""></button>
+    <button onclick="p2(5)"><img src="img/eat5.png" alt=""></button>
+</div> 
+
+<span>Введите скорость и нажмите Enter:</span>
+<br>
+<input type="number" id="speed" onchange="changeSpeed(20)">
+    
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
