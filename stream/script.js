@@ -16,7 +16,7 @@ let b = 200;
 
 let score = 0;
 
-let speed = document.getElementById('speed').value;
+// let speed = document.getElementById('speed').value;
 
 
 let aRandom = Math.round(Math.random()*620);
@@ -31,9 +31,9 @@ playerImg.src = "img/player.png";
 eat.src = "img/eat.png";
 
 
-function changeSpeed (num){
-    speed = document.getElementById('speed').value;
-}
+// function changeSpeed (num){
+//     speed = document.getElementById('speed').value;
+// }
 
 
 
@@ -49,7 +49,7 @@ function draw() {
 
     document.onkeydown = function move (){
         if(event.key == "ArrowRight"){
-            player.a+=speed;
+            player.a+=20;
             if (player.a>540) {
                 player.a = 540;
             }
@@ -57,21 +57,21 @@ function draw() {
         }
 
         if(event.key == "ArrowLeft") {
-            player.a-=speed;
+            player.a-=20;
             if (player.a<0) {
                 player.a = 0;
             }
         }
 
         if(event.key == "ArrowDown"){
-            player.b+=speed;
+            player.b+=20;
             if (player.b>610) {
                 player.b = 610;
             }
         }
 
         if(event.key == "ArrowUp"){
-            player.b-=speed;
+            player.b-=20;
             if (player.b<0) {
                 player.b = 0;
             }
@@ -103,6 +103,9 @@ function draw() {
     
 
 }
+
+
+
  draw();
 
 function p1(num) {
@@ -128,7 +131,7 @@ start();
 
 
 
-
+// https://bogdanchikov-ilya.github.io./stream/index.html
 
 
 // а еще можешь попробовать создать тертье свойство где будет храниться img, тип player.img, ну все побежал

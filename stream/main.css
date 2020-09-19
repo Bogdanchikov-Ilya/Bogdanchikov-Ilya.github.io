@@ -2,7 +2,8 @@ canvas {
     border:1px solid red;
     width: 50%;
     float: left;
-    min-width: 100%;
+    min-width: 560px;
+    max-width: 100%;
 }
 
 span {
