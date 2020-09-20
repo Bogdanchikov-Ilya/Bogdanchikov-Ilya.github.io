@@ -183,8 +183,10 @@ if(score >= 50) {
     
 
 
-
+    
+    
 }
+
 
 
 function info () {
@@ -203,7 +205,7 @@ function p2(num) {
 
 function cheat(){
     score = 99999;
-    document.getElementById('info').innerHTML = 'Теперь вы читер';
+    document.querySelector('#info').innerHTML = 'Теперь вы читер';
     document.getElementById('score').innerHTML = score;
     document.getElementById('p1').disabled = false;
     document.getElementById('p3').disabled = false;
