@@ -246,3 +246,6 @@ start();
 
 // если кнопка cheat mod нажата, то  
 //document.getElementById('ALL').disabled = false;
+
+//я кста в начале проектов обычно создаю функцию с коротким названием и там возвращаю то, что нашел квери селектор, напримар function F( find ) { return document.querySelector( find ) }
+// вместо этого просто F('#p1').disabled = false
