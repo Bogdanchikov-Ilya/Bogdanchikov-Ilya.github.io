@@ -9,16 +9,16 @@
 <body>
     <canvas id="canvas" width="650" height="700"></canvas>
     
-    <span>Резульат:</span>
-    <span id="score"></span>
+    <span class="score">Результат:</span>
+    <span id="score" class="score"></span>
     <br>
 <div class="players">
-    <button onclick="p1(0)"><img src="img/player0.png" alt=""></button>
-    <button onclick="p1(1)" id="p1" ><img src="img/player1.png" alt=""></button>
-    <button onclick="p1(2)" id="p3" ><img src="img/player2.png" alt=""></button>
-    <button onclick="p1(3)" id="p4" ><img src="img/player3.png" alt=""></button>
-    <button onclick="p1(4)" id="p5" ><img src="img/player4.png" alt=""></button>
-    <button onclick="p1(5)" id="p6" ><img src="img/player5.png" alt=""></button>
+    <button onclick="p1(0)" id="p2"><img src="img/player0.png" alt=""></button>
+    <button onclick="p1(1)" id="p1"><img src="img/player1.png" alt=""></button>
+    <button onclick="p1(2)" id="p3"><img src="img/player2.png" alt=""></button>
+    <button onclick="p1(3)" id="p4"><img src="img/player3.png" alt=""></button>
+    <button onclick="p1(4)" id="p5"><img src="img/player4.png" alt=""></button>
+    <button onclick="p1(5)" id="p6"><img src="img/player5.png" alt=""></button>
 </div> 
 
 <hr>
@@ -32,12 +32,13 @@
     <button onclick="p2(5)" id="e6"><img src="img/eat5.png" alt=""></button>
 </div> 
 
-<button onclick="cheat()">CHEAT MOD</button>
+<button onclick="cheat()" id="cheat">CHEAT MODE</button>
 <h2 id="info"></h2>
+<h2 if='info2'></h2>
 
-<!-- <span>Введите скорость и нажмите Enter:</span>
+<p id="speedChange">Введите скорость и нажмите Enter:</p>
 <br>
-<input type="number" id="speed" onchange="changeSpeed(20)"> -->
+<input type="number" id="speed" onchange="changeSpeed(20)">
     
     
     <script src="script.js">
