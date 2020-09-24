@@ -9,6 +9,7 @@ body {
     background-color:white;
     display: flex;
     justify-content: space-around;
+    min-width: 638px;
 }
 
 .block {
@@ -80,3 +81,4 @@ body {
 #per{
     margin-left: 10px;
 }
+
