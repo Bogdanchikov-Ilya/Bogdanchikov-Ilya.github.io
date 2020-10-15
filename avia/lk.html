@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style/lk.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="menu">
+                <nav>
+                    <img src="img/jet.png" alt="" class="logo">
+                    <ul class="mob">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="reisi.html">Рейсы</a></li>
+                        <li><a href="buy.html">Купить билет</a></li>
+                        <li><a href="lk.html">Личный кабинет</a></li>
+                    </ul>
+                    <button class="button__triger" onclick="f1()"><div class="triger">*меню*</div></button>
+                </nav>
+            </div>
+
+            <div class="main">
+                <div class="container">
+                    <div class="user">
+                        <div class="user__photo">
+                            <img src="img/user.png" alt="User" class="photo">
+                            <input type="file" class="upload__photo" name="file" id="input__file">
+                            <label for="input__file" class="label">Выберете файл</label>
+                        </div> 
+                        
+                        <div class="user__spec">
+                            <div class="user__fio">Иванов Иван Иванович</div>
+                            <span class="age">Дата рождения:</span>
+                            <span class="user__age">01.01.1998</span>
+                            <p class="passport__title">Паспортные данные:</p>
+                            <div class="user__passport"><input type="number" class="passport__s" placeholder="Серия: 1234 567"> <br> <input type="number" class="passport__n" placeholder="Номер:1234"></div>
+                            <div class="passport__title">Снилс:</div>
+                            <span class="user__snils"><input type="number" placeholder="Снилс:" class="input__snils"></span><br>
+                            <div class="passport__title">ИНН:</div>
+                            <div class="user__snils"><input type="numer" class="inn" placeholder="ИНН:"></div>
+                            <button class="button__save">Сохранить данные</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ticket__story">
+                    <div class="story__title">История полетов</div>
+                    <div class="container">
+                        <table>
+                          <thead>
+                          <tr>
+                            <th>Номер рейса</th>
+                            <th>Цена</th>
+                            <th>Дата покупки</th>
+                            <th>Время вылета</th>
+                            <th>Время прилета</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td data-label="Номер рейса">1</td>
+                            <td data-label="Цена">500$</td>
+                            <td data-label="Дата покупки">22-00</td>
+                            <td data-label="Время вылета">14-45</td>
+                            <td data-label="Время прилета">0-54</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Номер рейса">2</td>
+                            <td data-label="Цена">500$</td>
+                            <td data-label="Дата покупки">22-00</td>
+                            <td data-label="Время вылета">14-45</td>
+                            <td data-label="Время прилета">0-54</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Номер рейса">3</td>
+                            <td data-label="Цена">500$</td>
+                            <td data-label="Дата покупки">22-00</td>
+                            <td data-label="Время вылета">14-45</td>
+                            <td data-label="Время прилета">0-54</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer__wrapper">
+                    <div class="footer__card">
+                        <p>О нас</p>
+                        <ul>
+                            <li>Почему мы?</li>
+                            <li>Медиа</li>
+                            <li>наша команда</li>
+                            <li>Сиабильность</li>
+                            <li>Акции</li>
+                            <li>Вакансии</li>
+                            <li>Наши контакты</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__card">
+                        <p>Наши Соцсети</p>
+                        <ul>
+                            <li>ВКонтакте</li>
+                            <li>Инстаграм</li>
+                            <li>Телеграм</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__card">
+                        <p>Помощь</p>
+                        <ul>
+                            <li>Справка</li>
+                            <li>Настрока</li>
+                            <li>Политика конфиденциальности</li>
+                        </ul>
+                    </div>    
+                </div>
+            </footer>
+        </header>
+    </div>
+<script src="script/script.js"></script>
+</body>
+</html>
