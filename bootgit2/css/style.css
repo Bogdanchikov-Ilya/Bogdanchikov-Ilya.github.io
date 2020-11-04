@@ -1120,17 +1120,70 @@ p{
 	width:  42%;
 }
 
-.container-fluid-6{
-	background-color: red;
+.container-fluid{
+	padding: 0 !important;
 }
 
+#container_two{
+	background-color: #E8E8E8 !important;
+	width: 100% !important;
+	height: 400px !important;
+	margin-top: 70px;
+}
 
+.card-text{
+	color:black !important;
+}
 
+i{
+	color:black !important;
+}
+
+#card-title-2{
+	font-size: 20px;
+	margin: 0;
+	height: 20px;
+	margin-top: 18px !important;
+	margin-bottom: 18px !important;
+	height:50px !important;
+}
+
+#card-text-2{
+	font-size: 14px;
+}
+
+#cards2{
+	padding-top: 0px !important;
+}
+
+.card-content{
+	display: grid !important;
+	margin: 0 auto;
+}
+
+.card-in{
+	width: 100%;
+	height: 200px !important;
+}
+
+#global-title-2{
+	padding-top: 15px;
+}
 
 
 @media screen and (min-width:1183px){
 	.master{
 		min-width: 83%;
+	}
+}
+
+@media screen and (max-width:1183px){
+	#container_two{
+		height: 700px !important;
+	}
+
+	#cards2{
+		padding-top: 20px !important;
 	}
 }
 
@@ -1177,6 +1230,53 @@ p{
 		width: 80%;
 		height: 109%;
 	}
+
+	#container_two{
+		background-color: #E8E8E8 !important;
+		width: 100% !important;
+		height: 1500px !important;
+		margin-top: 70px;
+	}
+
+	.card-content{
+		width: 90% !important;
+		margin: auto;
+	}
+
+	.card-img > img{
+		width: 35%;
+	}
+
+	#card-text-2{
+		font-size: 22px;
+	}
+
+	#card-title-2 > b{
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width:564px), (min-width:535){
+	#card-text-2 {
+		font-size: 18px;
+	}
+
+	#card-title-2 > b {
+		font-size: 23px;
+	}
+
+	#container_two{
+		background-color: #E8E8E8 !important;
+		width: 100% !important;
+		height: 800px !important;
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width:534px){
+	#container_two{
+		height: 1600px !important;
+	}
 }
 
 @media screen and (max-width:500px){
@@ -1188,6 +1288,12 @@ p{
 		width: 90%;
 		height: 109%;
 	}
+
+	#card-title-2 > b {
+		font-size: 25px;
+	}
+
+
 }
 
 @media screen and (max-width:400px){
@@ -1204,6 +1310,15 @@ p{
 		width: 94%;
 		height: 109%;
 	}
+
+	#card-text-2 {
+		font-size: 18px;
+	}
+
+	#card-title-2 > b {
+		font-size: 23px;
+	}
+
 }
 
 @media screen and (max-width:326px){
