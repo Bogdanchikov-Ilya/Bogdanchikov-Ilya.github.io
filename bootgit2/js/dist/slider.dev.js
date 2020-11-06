@@ -16,16 +16,20 @@ var swiper = new Swiper('.swiper-container', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      slidesPerGroup: 1
     },
     534: {
-      slidesPerView: 2
+      slidesPerView: 2,
+      slidesPerGroup: 2
     },
     987: {
-      slidesPerView: 3
+      slidesPerView: 3,
+      slidesPerGroup: 3
     },
     1183: {
-      slidesPerView: 4
+      slidesPerView: 4,
+      slidesPerGroup: 4
     }
   }
 });
