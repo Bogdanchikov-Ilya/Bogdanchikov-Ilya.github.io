@@ -1309,6 +1309,101 @@ n{
 	font-size: 35px !important;
 }
 
+.example{
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* width: 255px !important; */
+	height: 309px !important;
+	/* background-color: skyblue; */
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#slider-wrapper-two{
+	height: 380px !important;
+}
+
+#child_img{
+	width: 223px !important;
+	height: 306px !important;
+}
+
+#pag2{
+	display: none;
+}
+
+#otstup{
+	margin-top: 30px;
+}
+
+.container-fluid{
+	height: 513px !important;
+	width: 100% !important;
+	background-color: #86ADEF;
+}
+
+form{
+	padding-top: 50px !important;
+}
+
+label{
+	color:white !important;
+}
+
+#inputPassword4,
+#inputEmail4{
+	width: 96% !important;
+	margin: auto;
+	margin-right: ;
+	color:black !important;
+}
+
+#inputPassword4{
+	margin-right: 10px !important;
+	padding-right: 0px !important;
+}
+
+#inputEmail4{
+	
+}
+
+#form-btn{
+	width: 200px !important;
+	height: 45px !important;
+	font-size: 20px !important;
+	margin: 0 auto !important;
+	text-align: center !important;
+}
+
+#from-btn-container{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#form-up-title{
+	color:white !important;
+	padding-top: 40px !important;
+}
+
+#inputAddress,
+#inputAddress2{
+	color: black !important;
+}
+
+
 @media screen and (min-width:1183px){
 	.master{
 		min-width: 83%;
@@ -1331,6 +1426,11 @@ n{
 	.swiper-button-next{
 		display: none !important;
 	}
+
+	#pag2{
+		display: block;
+	}
+	
 	
 }
 
@@ -1375,6 +1475,46 @@ n{
 		font-size: 31px;
 	}
 }
+
+@media screen and (max-width:764px){
+	#inputPassword4,
+	#inputEmail4{
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+
+	#inputPassword4{
+		margin-right: 0px !important;
+		margin: 0 auto !important;
+		
+	}	
+
+	#inputEmail4{
+		margin-left: 0px !important;
+		margin: 0 auto !important;
+		
+	}
+
+	.form-row{
+		width: 100%;
+		margin: auto;
+	}
+
+	#inputAddress2,
+	#inputAddress{
+		margin: auto !important;
+		width: 97%;
+	}
+
+	label{
+		margin-left: 9px !important;
+	}
+
+	.container-fluid{
+		height: 600px !important;
+	}
+
+	
 
 @media screen and (max-width:564px){
 	.card{
