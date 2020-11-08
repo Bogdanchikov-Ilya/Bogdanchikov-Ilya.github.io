@@ -1391,6 +1391,7 @@ label{
 #from-btn-container{
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 50px !important;
 }
 
 #form-up-title{
@@ -1403,7 +1404,39 @@ label{
 	color: black !important;
 }
 
+#form-container{
+	margin-top: 0px !important; 
+}
 
+footer{
+	background-color: #333333 !important;
+	color:white !important;
+}
+
+.col-md-3 > p{
+	color:white !important;
+}
+
+.text-uppercase{
+	color: white !important;
+}
+
+.col-md-4 > p{
+	color: white !important;
+}
+
+.text-warning{
+	color: white !important;
+}
+
+#coryph > p{
+	color: #E8E8E8 !important;
+	margin-bottom: 10px !important;
+}
+
+strong{
+	margin-top: 20px !important;
+}
 @media screen and (min-width:1183px){
 	.master{
 		min-width: 83%;
@@ -1474,6 +1507,10 @@ label{
 	#slider-up-title{
 		font-size: 31px;
 	}
+
+	#form-container{
+		margin-top: -100px !important; 
+	}
 }
 
 @media screen and (max-width:764px){
@@ -1511,7 +1548,22 @@ label{
 	}
 
 	.container-fluid{
-		height: 600px !important;
+		height: 680px !important;
+	}
+
+	#form-container{
+		margin-top: -100px !important; 
+	}
+
+	.col-md-3,
+	.col-md-4{
+		
+		margin: auto !important;
+	}
+
+	.row{
+		width: 100%;
+		margin: auto !important;
 	}
 
 	
