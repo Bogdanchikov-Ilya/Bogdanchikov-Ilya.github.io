@@ -1620,6 +1620,12 @@ strong{
 		height: 800px !important;
 		margin-top: 70px;
 	}
+
+	.container-fluid-4{
+		margin-top: 80px;
+	}
+
+	
 }
 
 @media screen and (max-width:534px){
@@ -1631,6 +1637,10 @@ strong{
 		width: 80% !important;
 		height: 50% !important;
 		margin-top: 30px;
+	}
+
+	#form-container{
+		margin-top: -40px !important;
 	}
 }
 
@@ -1646,6 +1656,14 @@ strong{
 
 	#card-title-2 > b {
 		font-size: 25px;
+	}
+
+	#container_two{
+		height: 1450px !important;
+	}
+
+	.container-fluid-4{
+		margin-top: 80px;
 	}
 
 
@@ -1678,6 +1696,10 @@ strong{
 		width: 95% !important;
 		height: 50% !important;
 		margin-top: 30px;
+	}
+
+	#container_two{
+		height: 1380px !important;
 	}
 
 }
