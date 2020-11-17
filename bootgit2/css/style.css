@@ -1350,13 +1350,13 @@ n{
 }
 
 .container-fluid{
-	height: 513px !important;
+	height: 533px !important;
 	width: 100% !important;
 	background-color: #86ADEF;
 }
 
 form{
-	padding-top: 50px !important;
+	padding-top: 30px !important;
 }
 
 label{
@@ -1437,6 +1437,12 @@ footer{
 strong{
 	margin-top: 20px !important;
 }
+
+#form-up-title{
+	padding-top: 35px !important;
+	color:white !important;
+}
+
 @media screen and (min-width:1183px){
 	.master{
 		min-width: 83%;
