@@ -88,12 +88,11 @@ body {
 
 .wrapper {
   width: 100%;
-  margin: auto;
 }
 
 header {
   background-color: #87509c;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   transition: 0.3s;
 }
@@ -210,7 +209,7 @@ header {
 
 .services {
   width: 100%;
-  height: 750px;
+  height: 100%;
   background-color: #17c2a4;
 }
 
@@ -242,6 +241,42 @@ header {
   margin-top: 22px;
   letter-spacing: 0 0 2em;
   font-weight: 400;
+}
+
+.services__cards {
+  margin-top: 74px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__cards-card {
+  width: 250px;
+  height: 330px;
+  text-align: center;
+  color: white;
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 10px;
+}
+.services__cards-card .card__img {
+  margin: auto;
+  text-align: center;
+}
+.services__cards-card .card__img img {
+  margin: auto;
+  text-align: center;
+}
+.services__cards-card .card__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+.services__cards-card .card__description {
+  font-weight: 300;
+  margin-top: 27px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -334,5 +369,9 @@ header {
 
   .wrapper__in {
     background-color: #87509c;
+  }
+
+  header {
+    min-height: 600px;
   }
 }
