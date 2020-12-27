@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+  border: 1px solid red;
 }
 
 *,
@@ -100,7 +101,6 @@ header {
 }
 
 .container {
-  border: 1px solid red;
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
@@ -211,11 +211,11 @@ header {
 
 .services {
   width: 100%;
-  height: 100%;
+  min-height: 90%;
   background-color: #17c2a4;
 }
 
-.services__title {
+.services__title, .form__title {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
@@ -235,7 +235,17 @@ header {
   margin-top: 22px;
 }
 
-.services__description {
+.form__title::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background-color: #273a71;
+  margin: auto;
+  margin-top: 22px;
+}
+
+.services__description, .form__description {
   margin: auto;
   text-align: center;
   font-size: 18px;
@@ -247,7 +257,6 @@ header {
 
 .services__cards {
   margin-top: 74px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -258,9 +267,18 @@ header {
   height: 330px;
   text-align: center;
   color: white;
-  border: 1px solid red;
   margin: auto;
   margin-top: 10px;
+}
+@media (max-width: 767.98px) {
+  .services__cards-card {
+    width: 70%;
+  }
+}
+@media (max-width: 479.98px) {
+  .services__cards-card {
+    width: 90%;
+  }
 }
 .services__cards-card .card__img {
   margin: auto;
@@ -279,6 +297,140 @@ header {
 .services__cards-card .card__description {
   font-weight: 300;
   margin-top: 27px;
+}
+
+.form {
+  height: 820px;
+  background-color: #3c5499;
+  width: 100%;
+}
+
+.form__body {
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 860px;
+  min-height: 300px;
+}
+
+.form__name, .form__mail, .input__name, .input__mail {
+  width: 410px;
+  height: 55px;
+}
+@media (max-width: 991.98px) {
+  .form__name, .form__mail, .input__name, .input__mail {
+    margin: auto;
+    width: 85%;
+  }
+}
+@media (max-width: 767.98px) {
+  .form__name, .form__mail, .input__name, .input__mail {
+    width: 95%;
+  }
+}
+@media (max-width: 479.98px) {
+  .form__name, .form__mail, .input__name, .input__mail {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .form__mail {
+    margin-top: 30px;
+  }
+}
+
+.input__name, .input__mail {
+  border-radius: 3.5px;
+  background-color: #273a71;
+}
+@media (max-width: 991.98px) {
+  .input__name, .input__mail {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.input__name::placeholder, .input__mail::placeholder, .input__comment::placeholder {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+.input__name::placeholder::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background-color: #14a58c;
+  margin: auto;
+  margin-top: 22px;
+}
+
+.form__comment {
+  width: 100%;
+  height: 200px;
+  margin-top: 27px;
+}
+
+.input__comment {
+  background-color: #273a71;
+  width: 100%;
+  height: 200px;
+  border-radius: 3.5px;
+  resize: none;
+}
+
+footer {
+  height: 110px;
+  width: 100%;
+  background-color: #344b8e;
+}
+@media (max-width: 767.98px) {
+  footer {
+    height: 200px;
+  }
+}
+@media (max-width: 479.98px) {
+  footer {
+    height: 250px;
+  }
+}
+@media (max-width: 330px) {
+  footer {
+    height: 320px;
+  }
+}
+
+.footer__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.footer__link .link__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link__container li {
+  display: inline-block;
+  margin: 10px;
+}
+.link__container li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+.link__container li .footer__link-active {
+  color: #30bae7;
 }
 
 @media screen and (max-width: 767.98px) {
