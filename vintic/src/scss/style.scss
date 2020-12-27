@@ -16,7 +16,7 @@ $md4: 479.98;
 *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 :focus,
 :active {
