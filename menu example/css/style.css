@@ -1,0 +1,296 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1182px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .header__menu {
+    margin-top: 0px;
+    height: 42px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.header__menu-active {
+  height: 220px;
+  transition: 0.25s ease-in-out;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 991.98px) {
+  .menu__list {
+    margin: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu__list {
+    display: none;
+  }
+}
+.menu__list .first {
+  margin-left: 0;
+}
+.menu__list .active {
+  position: relative;
+}
+.menu__list .active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #3D8AFF;
+  margin-top: 25px;
+}
+@media (max-width: 991.98px) {
+  .menu__list .active::before {
+    margin-top: 23px;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu__list .active::before {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu__list .active a {
+    color: #3D8AFF;
+  }
+}
+.menu__list li {
+  margin-left: 24px;
+}
+@media (max-width: 767.98px) {
+  .menu__list li {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.menu__list li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  position: relative;
+}
+
+.menu__list-active {
+  display: block;
+}
+
+.hamurger__menu {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .hamurger__menu {
+    display: block;
+    margin-top: 20px;
+  }
+}
+.hamurger__menu span {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.2s ease-in;
+}
+.hamurger__menu span::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 10px;
+  transition: 0.2s ease-in;
+}
+.hamurger__menu span::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: -10px;
+  transition: 0.2s ease-in;
+}
+.hamurger__menu .menu__active {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(45deg);
+  transition: 0.2s ease-in;
+}
+.hamurger__menu .menu__active::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 10px;
+  top: 0;
+  transform: rotate(0);
+  transition: 0.2s ease-in;
+}
+.hamurger__menu .menu__active::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: -10px;
+  top: 0;
+  transform: rotate(90deg);
+  transition: 0.2s ease-in;
+}
+
+.logo__link {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 991.98px) {
+  .logo__link {
+    display: none;
+  }
+}
